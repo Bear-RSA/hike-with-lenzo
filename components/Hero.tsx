@@ -27,7 +27,7 @@ export function Hero() {
           <span className="text-gold">with someone who knows them.</span>
         </h1>
 
-        <p className="mt-6 max-w-xl text-base leading-relaxed text-mist/90 sm:text-lg">
+        <p className="mt-6 max-w-xl text-base font-medium leading-relaxed text-white sm:text-lg [text-shadow:0_1px_12px_rgba(50,54,79,0.6)]">
           Guided hikes up Table Mountain, Lion&apos;s Head, the Twelve Apostles and the wild
           Cape Peninsula — small groups, real stories, and a safe way down every time.
         </p>
