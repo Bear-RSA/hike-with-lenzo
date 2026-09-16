@@ -199,6 +199,24 @@ textarea {
   font-size: 16px;
 }
 
+/* iOS Safari gives date inputs an intrinsic width and ignores width:100%
+   unless appearance and min-width are reset. Also keep its height in line
+   with the other fields when empty. */
+input[type="date"] {
+  -webkit-appearance: none;
+  appearance: none;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 3.125rem;
+}
+input[type="date"]::-webkit-date-and-time-value {
+  text-align: left;
+  min-height: 1.5em;
+}
+
 /* Hide scrollbar on horizontal filter rows */
 .no-scrollbar {
   scrollbar-width: none;

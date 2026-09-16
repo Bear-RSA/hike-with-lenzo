@@ -148,7 +148,7 @@ export function EnquiryForm() {
               <input name="phone" type="tel" autoComplete="tel" className={field} placeholder="+27 …" />
             </Field>
             <Field label="Preferred date" hint="optional" error={errors.date}>
-              <input name="date" type="date" min={today} className={field} />
+              <input name="date" type="date" min={today} className={`${field} min-w-0`} />
             </Field>
 
             <Field label="Trail" error={errors.trailSlug} className="sm:col-span-2">
