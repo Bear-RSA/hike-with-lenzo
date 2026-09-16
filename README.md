@@ -1,8 +1,12 @@
 # Hiking with Lenzo & Friends
 
-Single-page site for a Cape Town hiking guide. Visitors browse 21 trails across Table Mountain National Park, open a trail's details, and send an enquiry that lands in Lenzo's inbox via [Resend](https://resend.com).
+A production-ready, single-page website for a Cape Town-based hiking guide, Lenzo. The site showcases 21 curated trails across Table Mountain National Park — including Lion's Head and Table Mountain routes — with per-trail details, stats, and photography.
 
-Stack: Next.js 16 (App Router) · Tailwind v4 · Resend · zod · react-email.
+An integrated enquiry form lets hikers request a guided hike; submissions are validated with zod and sent through Resend as two react-email templates: one to Lenzo (Reply-To set to the hiker so he can just hit reply) and a confirmation to the hiker. The API route includes a honeypot field and lightweight per-IP rate limiting to deter spam.
+
+Site content (contact details, bio, pricing, trails, testimonials) lives in simple config files so it's easy to update without touching components. Deep links (`/?trail=lions-head#enquire`) pre-select a trail in the form.
+
+**Stack:** Next.js 16 App Router, React 19 with the React Compiler, TypeScript, Tailwind CSS v4, Motion, Resend, react-email, zod. Deploys to Vercel with three environment variables.
 
 ## Run it
 
